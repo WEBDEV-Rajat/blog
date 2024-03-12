@@ -1,0 +1,140 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    font-family : Poppins, sans-serif;
+}
+body{
+    display:flex;
+    justify-content : center;
+    align-items:center;
+    min-height : 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: orange;
+}
+.clearfix ::after{
+    content: '';
+   display: block;
+   clear :both;
+}
+
+header {
+    position : fixed;
+    top : 0;
+    left : 0;
+    width : 100%;
+    padding :20 px 100 px;
+    display:flex;
+    background-color: yellow;
+    justify-content : space-between;
+    align-items : center;
+    z-index: 99;
+
+}
+
+.logo{
+    font-size: 2em;
+    color: black;
+    user-select: none;
+}
+img{
+    height: 53px;
+
+}
+.navigation a{
+    position : relative;
+    font-size: 1 em;
+    color:#fff;
+    text-decoration:none;   
+    font-weight : 500;
+    margin-left: 40px;
+}
+.navigation .btnLogout-popup{
+    width: 130px;
+    height: 50px;
+    color:rgb(2, 2, 48);
+    background : transparent;
+    border : 2px solid rgb(2,2,48);
+    outline : none;
+    border-radius : 6px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left :40px;
+    margin-right: 5px;
+}
+.navigation .btnLogin-popup:hover{
+    background : white;
+    color:#162938;
+}
+.navigation .menu{
+    font-size: 2em;
+
+}
+.post-slider{
+    position: relative;
+}
+
+.post-slider .slider-title{
+    text-align: center;
+    margin: 30px auto;
+}
+.post-slider .right-btn{
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    font-size: 2em;
+    cursor: pointer;
+}
+.post-slider .left-btn{
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    font-size: 2em;
+    cursor: pointer;
+
+}
+.post-slider .post-wrapper{
+    width: 1000px;
+    height : 350px;
+    overflow : hidden;
+    padding : 10px 0px 10px 0px;
+    margin : 0px auto;
+
+
+}
+.post-slider .post-wrapper .post{
+    height : 330px;
+    width : 300px;
+    margin : 0px 10px;
+    display : inline-block;
+    background : beige;
+    border-radius : 10px;
+}
+.post-slider .post-wrapper .post .post-info a{
+    text-decoration : none;
+    color: #162938;
+}
+.post-slider .post-wrapper .post .slider-image{
+            width : 100%;
+            height : 200px;
+            border-top-left-radius: 10px ;
+            border-top-right-radius: 10px ;
+}
+.content{
+    width: 90%;
+    margin: 30px auto 30px;
+    border: 1px solid red;
+}
+.content .main-content{
+    width: 70%;
+    float: left;
+    border: 1px solid red;
+
+}
+.content .sidebar{
+    width: 30%;
+
+
+}
+
